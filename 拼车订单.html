@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>拼车订单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/拼车订单/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/拼车订单/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (图片) -->
+      <div id="u730" class="ax_default _图片">
+        <img id="u730_img" class="img " src="images/拼车订单/u730.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u731" class="ax_default box_1">
+        <div id="u731_div" class=""></div>
+        <div id="u731_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">页面说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">1，司机整个行程路线图导航（根据即时拼车路线，动态变化）；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2，司机可通过该全局地图进行出发，到达目的地，地图上做好相应的行程路线起止点位置标记；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">该导航为第一个乘客的起点位置到最后一个乘客的终点位置进行路线规划（动态规划，如新加拼车），则为左图左侧的起止点进行动态展示；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">3，左侧内容为当前拼车派单的乘客信息列表，且展示当前接送状态；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u732" class="ax_default box_1">
+        <div id="u732_div" class=""></div>
+        <div id="u732_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">左侧上下可滑动信息页面说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1，左侧内容动态展示当前所有拼车订单；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2，如果是有一个乘客拼车订单时，则展示一个乘客的信息；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">3，如果有新添拼车订单，根据加入的时间顺序来排列；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">4，乘客信息头部为该乘客的目的地点；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">5，司机可以电话该乘客，如电话图标；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">6，乘客上车后，</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF3300;">司机点击“接到乘客”按钮</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">，表示该乘客行程开始，此时该按钮变为“到达目的地”；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">7，当司机到达乘客目的地后，</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF3300;">点击“到达”按钮</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">，弹出对话框（如下图），计算该乘客的行程费用，司机进行到达目的地确认；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">A，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF3300;">取消订单</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：表示司机取消了该乘客的拼车订单，此时司机需要填写取消原因，点击按钮 后，页面跳转到取消原因页面；</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">B，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF3300;">到达</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：表示司机已经将乘客送达目的地，此时弹出到达提示。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u733" class="ax_default primary_button">
+        <div id="u733_div" class=""></div>
+        <div id="u733_text" class="text ">
+          <p><span>取消订单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u734" class="ax_default box_1">
+        <div id="u734_div" class=""></div>
+        <div id="u734_text" class="text ">
+          <p><span>跳转到取消原因页面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u735" class="ax_default _连接符">
+        <img id="u735_seg0" class="img " src="images/拼车订单/u735_seg0.png" alt="u735_seg0"/>
+        <img id="u735_seg1" class="img " src="images/拼车订单/u735_seg1.png" alt="u735_seg1"/>
+        <div id="u735_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u736" class="ax_default" data-left="229" data-top="1062" data-width="556" data-height="326">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u737" class="ax_default button">
+          <div id="u737_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u738" class="ax_default primary_button">
+          <div id="u738_div" class=""></div>
+          <div id="u738_text" class="text ">
+            <p><span>确认</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆形) -->
+        <div id="u739" class="ax_default ellipse">
+          <img id="u739_img" class="img " src="images/非拼车订单（订单页面更新）/u652.png"/>
+          <div id="u739_text" class="text ">
+            <p><span>X</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u740" class="ax_default _三级标题">
+          <div id="u740_div" class=""></div>
+          <div id="u740_text" class="text ">
+            <p style="text-align:center;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">是否确认到达目的地</span></p><p style="text-align:left;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="text-align:left;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">&nbsp;&nbsp;&nbsp; 该乘客当前行程费为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF9933;">16.50</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">元</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u741" class="ax_default box_1">
+        <div id="u741_div" class=""></div>
+        <div id="u741_text" class="text ">
+          <p><span>关闭窗口</span></p><p><span>表示司机点击到达目的地未生效</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u742" class="ax_default _连接符">
+        <img id="u742_seg0" class="img " src="images/拼车订单/u742_seg0.png" alt="u742_seg0"/>
+        <img id="u742_seg1" class="img " src="images/拼车订单/u742_seg1.png" alt="u742_seg1"/>
+        <div id="u742_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u743" class="ax_default _文本段落">
+        <div id="u743_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u744" class="ax_default" data-left="940" data-top="1200" data-width="556" data-height="326">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u745" class="ax_default button">
+          <div id="u745_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u746" class="ax_default _三级标题">
+          <div id="u746_div" class=""></div>
+          <div id="u746_text" class="text ">
+            <p><span>当前行程已完成，是否继续听单？</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u747" class="ax_default primary_button">
+          <div id="u747_div" class=""></div>
+          <div id="u747_text" class="text ">
+            <p><span>继续听单</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u748" class="ax_default primary_button">
+          <div id="u748_div" class=""></div>
+          <div id="u748_text" class="text ">
+            <p><span>暂停接单</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u749" class="compound ax_default arrow" WidgetHeight="2" WidgetWidth="256" CompoundMode="true">
+        <img id="u749_img" class="singleImg img " src="images/拼车订单/u749.png"/>
+        <div id="u749p000" class="ax_vector_shape" WidgetTopLeftX="-0.492307692307692" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.492307692307692" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.492307692307692" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.492307692307692" WidgetBottomRightY="0.166666666666667">
+          <img id="u749p000_img" class="img " src="images/拼车订单/u749p000.png"/>
+        </div>
+        <div id="u749p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.5" WidgetTopRightX="64" WidgetTopRightY="-0.5" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="64" WidgetBottomRightY="0">
+          <img id="u749p001_img" class="img " src="images/未开启定位服务提醒/u57p001.png"/>
+        </div>
+        <div id="u749p002" class="ax_vector_shape" WidgetTopLeftX="10.4166666666667" WidgetTopLeftY="0.0454545454545455" WidgetTopRightX="-0.25" WidgetTopRightY="0.0454545454545455" WidgetBottomLeftX="10.4166666666667" WidgetBottomLeftY="-0.0454545454545455" WidgetBottomRightX="-0.25" WidgetBottomRightY="-0.0454545454545455">
+          <img id="u749p002_img" class="img " src="images/未开启定位服务提醒/u57p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u750" class="ax_default label">
+        <div id="u750_div" class=""></div>
+        <div id="u750_text" class="text ">
+          <p><span>当拼车订单只剩最后一波乘客未到达时，点击确认之后弹出</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u751" class="ax_default box_1">
+        <div id="u751_div" class=""></div>
+        <div id="u751_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">语音提示说明</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF3300;">有新拼车派单</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：您有一条新的派单信息！手机尾号xxx的乘客由（出发地）前往（目的地）。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">当前需要接或送乘客时给出语音提示：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">（下一步接送的语音提示），如，根据导航路线，当前需要去接乘客，或去送乘客到达目的地时给出相应的语音提示！</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF3300;">接乘客</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：手机尾号XXX的乘客需要去接车，请做好接车准备！</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF3300;">送乘客</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">：手机尾号XXX的乘客需要送达目的地，请做好准备</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">（表示司机整个行程结束，且当前没有任何拼车订单！）</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF0000;">行程结束：</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">语音提示：尾号为XXX的乘客的订单已经完成，应付款XX.XX元，请提醒乘客带好随身物品准备下车。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u752" class="ax_default _连接符">
+        <img id="u752_seg0" class="img " src="images/拼车订单/u752_seg0.png" alt="u752_seg0"/>
+        <img id="u752_seg1" class="img " src="images/拼车订单/u752_seg1.png" alt="u752_seg1"/>
+        <img id="u752_seg2" class="img " src="images/不拼车/u159_seg3.png" alt="u752_seg2"/>
+        <div id="u752_text" class="text ">
+          <p><span><br></span></p><p><span><br></span></p><p><span>司机点击</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u753" class="ax_default label">
+        <div id="u753_div" class=""></div>
+        <div id="u753_text" class="text ">
+          <p><span>点击进入设置顶灯内容页面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u754" class="ax_default _连接线">
+        <img id="u754_seg0" class="img " src="images/拼车订单/u754_seg0.png" alt="u754_seg0"/>
+        <img id="u754_seg1" class="img " src="images/拼车订单/u754_seg1.png" alt="u754_seg1"/>
+        <img id="u754_seg2" class="img " src="images/拼车订单/u754_seg2.png" alt="u754_seg2"/>
+        <div id="u754_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u755" class="ax_default _文本段落">
+        <div id="u755_div" class=""></div>
+        <div id="u755_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1.左侧字母也变成红色，点击左侧字母或者右侧顶部字母都可以更换送达顺序。地图上面的文字改为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">点击左栏字母可更换送达顺序：A B C</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">每接到一个人后（扬招不算），系统都会重新规划路线，重新定义顺序。（</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF0000;">当有某个人未接到时，送达顺序这行字不要，改成：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#FF0000;">去接A乘客的途中</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;color:#FF0000;">。导航也是到A并且点击左侧的字母也无反应。）</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">2.拼单的情况下，接到前显示：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">预估价</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">￥22元</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">。接到后未拼成时价格行显示：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">已走2.5公里，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">￥12.5元</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">。</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">已拼成后价格行显示折扣价：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">已走2.6公里，拼成价9.7元</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">。（当拼成订单更多是拼成价还会显示更低价）</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:13px;">扬招拼车上车显示：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">已走3公里，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">￥12.5元*八折</span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">（最高峰三拨人时七折，四拨人时六折）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u756" class="ax_default" data-left="411" data-top="686" data-width="45" data-height="45">
+
+        <!-- Unnamed (椭圆形) -->
+        <div id="u757" class="ax_default ellipse">
+          <img id="u757_img" class="img " src="images/非拼车订单（订单页面更新）/u666.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u758" class="ax_default _图片">
+          <img id="u758_img" class="img " src="images/非拼车订单（订单页面更新）/u667.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u759" class="ax_default" data-left="710" data-top="400" data-width="158" data-height="102">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u760" class="ax_default box_1">
+          <div id="u760_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u761" class="ax_default label">
+          <div id="u761_div" class=""></div>
+          <div id="u761_text" class="text ">
+            <p><span>距终点3.6公里，</span></p><p><span>预计16:30到达&nbsp;&nbsp; </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u762" class="ax_default box_1">
+          <img id="u762_img" class="img " src="images/拼车订单/u762.png"/>
+          <div id="u762_text" class="text ">
+            <p><span>导航至A终点</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u763" class="ax_default _图片">
+        <img id="u763_img" class="img " src="images/拼车订单/u763.png"/>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u764" class="ax_default" data-left="868" data-top="245" data-width="121" data-height="503">
+
+        <!-- Unnamed (图片) -->
+        <div id="u765" class="ax_default _图片">
+          <img id="u765_img" class="img " src="images/非拼车订单（订单页面更新）/u659.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组 合) -->
+      <div id="u766" class="ax_default" data-left="505" data-top="384" data-width="158" data-height="45">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u767" class="ax_default box_1">
+          <div id="u767_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u768" class="ax_default box_1">
+          <img id="u768_img" class="img " src="images/拼车订单/u762.png"/>
+          <div id="u768_text" class="text ">
+            <p><span>导航至C起点</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u769" class="ax_default label">
+        <div id="u769_div" class=""></div>
+        <div id="u769_text" class="text ">
+          <p><span>暂未接到乘客的时候显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u770" class="ax_default label">
+        <div id="u770_div" class=""></div>
+        <div id="u770_text" class="text ">
+          <p><span>接到乘客后显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u771" class="ax_default label">
+        <div id="u771_div" class=""></div>
+        <div id="u771_text" class="text ">
+          <p><span>如果是扬招，则没有终点，不用显示任何导航提示</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
